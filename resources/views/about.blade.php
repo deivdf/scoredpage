@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SPA Center - Beauty & Spa HTML Template</title>
+    <title>Pasion Scorts</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -34,11 +33,11 @@
     <!-- Header Start -->
     <div class="jumbotron jumbotron-fluid bg-jumbotron" style="margin-bottom: 90px;">
         <div class="container text-center py-5">
-            <h3 class="text-white display-3 mb-4">About</h3>
+            <h3 class="text-white display-3 mb-4">Acerca de nosotros</h3>
             <div class="d-inline-flex align-items-center text-white">
-                <p class="m-0"><a class="text-white" href="">Home</a></p>
+                <p class="m-0"><a class="text-white" href="/">Inicio</a></p>
                 <i class="far fa-circle px-3"></i>
-                <p class="m-0">About</p>
+                <p class="m-0">Nosotros</p>
             </div>
         </div>
     </div>
@@ -53,9 +52,11 @@
                     <img class="img-fluid w-100" src="{{ asset('build/assets/img/about.jpg') }}" alt="">
                 </div>
                 <div class="col-lg-6">
-                    <h6 class="d-inline-block text-primary text-uppercase bg-light py-1 px-2">About Us</h6>
-                    <h1 class="mb-4">Your Best Spa, Beauty & Skin Care Center</h1>
-                    <p class="pl-4 border-left border-primary">Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd erat duo eos et erat</p>
+                    <h6 class="d-inline-block text-primary text-uppercase bg-light py-1 px-2">Acerca de nosotros</h6>
+                    <h1 class="mb-4">Pasión Scorts</h1>
+                    <p class="pl-4 border-left border-primary">Somos una agencia de escorts  y acompañantes de gran experiencia en el eje cafetero destinada a cumplir tus mejores fantasias, brindandote un servicio seguro y confiable, donde la confidencialidad y la discreción de los clientes exclusivos que confían en nuestra marca, es la parte más importante de las políticas de funcionamiento de la agencia, por otra parte también estamos enfocados en brindar las garantías para nuestro personal.</p>
+                    <p class="pl-4 border-left border-primary">Cabe mencionar que otra de las garantías que brindamos a nuestros clientes de PasionScort es de brindarles un servicio amable, cálido, complaciente, ardiente y fogoso para que salgas de la rutina.   Resaltamos que se deben de cumplir las condiciones estipuladas por la agencia para la prestación de este servicio en la región cafetera.</p>
+                    <p class="pl-4 border-left border-primary">Pasionscorts se enfoca en brindar un servicio de alta calidad, por ello las mujeres que quieran vincularse con la marca deben cumplir con los requisitos iniciales y siguiendo las políticas de la agencia, deben ser personas mayores de edad en completa libertad de tomar decisiones autónomas, se realiza un estudio adecuado de las chicas para así diferenciar los perfiles Vip dándote una experiencia con glamour y mucho estilo.</p>
                     <div class="row pt-3">
                         <div class="col-6">
                             <div class="bg-light text-center p-4">
