@@ -106,7 +106,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        <img class="img-fluid" src="{{ asset('build/assets/img/team-2.jpg') }}" alt="">
                         <div class="position-relative text-center">
                             <div class="team-text bg-primary text-white">
                                 <h5 class="text-white text-uppercase">Cory Brown</h5>
