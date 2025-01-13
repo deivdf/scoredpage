@@ -12,13 +12,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
-            $table->timestamps();
+            $table->id('idUsu'); // Cambia el nombre del campo ID a idUsu
+            $table->unsignedBigInteger('idRol'); // Clave foránea
+            $table->string('nombre'); // Campo nombre
+            $table->string('correo')->unique(); // Campo correo único
+            $table->string('telefono'); // Campo teléfono
+            $table->string('contraseña'); // Campo contraseña
+            $table->string('rol'); // Campo rol
+
+            $table->foreign('idRol')->references('idRol')->on('roles'); // Relación con la tabla roles
+            $table->timestamp('fechaRegistro')->default(DB::raw('CURRENT_TIMESTAMP')); // Campo fechaRegistro con valor por defecto
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
