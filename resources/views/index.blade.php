@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <title>Pasion Scorts</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    
-
     <!-- Favicon -->
     <link href="{{ asset('build/assets/img/favicon.ico') }}" rel="icon">
 
@@ -22,7 +20,7 @@
     <link href="{{ asset('build/assets/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('build/assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
+  
     <link href="{{ asset('build/assets/css/style.css') }}" rel="stylesheet">
 </head>
 

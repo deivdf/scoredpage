@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ModelsController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,7 +26,9 @@ Route::get('/about', function () {
 Route::get('/appointment', function () {
     return view('appointment');
 });
-
+Route::resource('models', ModelsController::class);
+Route::get('/models/create', [ModelsController::class, 'index'])->name('models.create');
+Route::post('/models', [ModelsController::class, 'store'])->name('models.store');
 Route::get('/contact', function () {
     return view('contact');
 });
@@ -38,9 +41,6 @@ Route::get('/price', function () {
     return view('price');
 });
 
-Route::get('/service', function () {
-    return view('service');
-});
 
 Route::get('/team', function () {
     return view('team');
