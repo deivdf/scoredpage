@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ModelsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -17,37 +18,16 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-#Rutas estaticas
-Route::get('/about', function () {
-    return view('about');
-});
+Route::resource('models', ModelsController::class);
 
-Route::get('/appointment', function () {
-    return view('appointment');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-Route::get('/opening', function () {
-    return view('opening');
-});
-
-Route::get('/price', function () {
-    return view('price');
-});
-
-Route::get('/service', function () {
-    return view('service');
-});
-
-Route::get('/team', function () {
-    return view('team');
-});
-
-Route::get('/testimonial', function () {
-    return view('testimonial');
-});
+# Rutas estáticas
+Route::view('/about', 'about');
+Route::view('/appointment', 'appointment');
+Route::view('/contact', 'contact');
+Route::view('/opening', 'opening');
+Route::view('/price', 'price');
+Route::view('/service', 'service');
+Route::view('/team', 'team');
+Route::view('/testimonial', 'testimonial');
 
 require __DIR__.'/auth.php';
